@@ -1,0 +1,61 @@
+{
+    "remote_ip": "104.196.232.237",
+    "remote_port": 443,
+    "url": "https://dummyjson.com/todos/1",
+    "status": 200,
+    "status_text": "200 OK",
+    "proto": "HTTP/2.0",
+    "headers": {
+        "X-Xss-Protection": "1; mode=block",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "X-Ratelimit-Limit": "120",
+        "Etag": "W/\"59-IdQfdIemoXMxXmo2lFZOUdB21S4\"",
+        "Access-Control-Allow-Origin": "*",
+        "X-Download-Options": "noopen",
+        "X-Ratelimit-Reset": "1696247872",
+        "X-Ratelimit-Remaining": "119",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 02 Oct 2023 11:57:07 GMT",
+        "Server": "railway",
+        "X-Dns-Prefetch-Control": "off",
+        "Content-Length": "89",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Strict-Transport-Security": "max-age=15552000; includeSubDomains"
+    },
+    "cookies": {},
+    "body": "{\"id\":1,\"todo\":\"Do something nice for someone I care about\",\"completed\":true,\"userId\":26}",
+    "timings": {
+        "duration": 200.607,
+        "blocked": 602.6882,
+        "looking_up": 0,
+        "connecting": 238.0832,
+        "tls_handshaking": 272.4523,
+        "sending": 0.7168,
+        "waiting": 199.8902,
+        "receiving": 0
+    },
+    "tls_version": "tls1.3",
+    "tls_cipher_suite": "TLS_AES_128_GCM_SHA256",
+    "ocsp": {
+        "produced_at": 0,
+        "this_update": 0,
+        "next_update": 0,
+        "revoked_at": 0,
+        "revocation_reason": "",
+        "status": "unknown"
+    },
+    "error": "",
+    "error_code": 0,
+    "request": {
+        "method": "GET",
+        "url": "https://dummyjson.com/todos/1",
+        "headers": {
+            "User-Agent": [
+                "k6/0.46.0 (https://k6.io/)"
+            ]
+        },
+        "body": "",
+        "cookies": {}
+    }
+}
