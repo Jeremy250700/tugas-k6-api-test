@@ -38,8 +38,8 @@ export default function(){
             'total datanya 150':(r) => r.json().total === 150
         })
     })
+
     group('FT_002 Mencoba mengambil data menggunakan id',function(){
-        
         for(let i = 1; i<=5; i++){
             const resSingleTodos = http.get('https://dummyjson.com/todos/'+i,{
                 tags: { judul:'data-todo-dengan-id-1'}
@@ -52,8 +52,7 @@ export default function(){
         }
     })
    
-    describe('FT_003 Mencoba menambah data baru', function(){
-        
+    describe('FT_003 Mencoba menambah data baru', function(){     
         const params = {
             todo:'testing',
             completed: false,
@@ -72,7 +71,6 @@ export default function(){
     })
 
     describe('FT_004 Mencoba update data', function(){
-        
         const params = { todo:'new Todo' }
         const resUpdateTodos = http.put('https://dummyjson.com/todos/1',params,{
             tags: { judul:'update-data', input:JSON.stringify(params)}
@@ -82,6 +80,7 @@ export default function(){
         expect(resUpdateTodos.status, 'statusnya').to.equal(200)
         expect(resUpdateTodos.json().todo,'todonya').to.equal('new Todo')
     })
+    
     describe('FT_005 Mencoba delete data',function(){
         const resDeleteTodos = http.del('https://dummyjson.com/todos/1',{
             tags: { judul:'delete-data'}
